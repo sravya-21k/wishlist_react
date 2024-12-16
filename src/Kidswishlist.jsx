@@ -7,9 +7,9 @@ export default function Kidswishlist({
   return (
     <Component naughty={naughty}>
       <KidDetails>
-        <h5>{id}</h5>
+        <h5>{id}.</h5>
         <h5>{name}</h5>
-        <h5>{age}</h5>
+        <h5>{age}år</h5>
       </KidDetails>
       <Wishlist>
         {wishlist.map((list, index) => (

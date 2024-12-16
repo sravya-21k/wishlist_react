@@ -1,6 +1,11 @@
 import React from "react";
 
-import { GlobalStyle, WishlistContainer, BackgroundVideo } from "./styles";
+import {
+  GlobalStyle,
+  WishlistContainer,
+  Header,
+  BackgroundVideo,
+} from "./styles";
 import video from "./assets/images/snowman.mp4";
 //import video from "./assets/images/s.gif";
 import Kidswishlist from "./Kidswishlist";
@@ -215,7 +220,7 @@ function App() {
   return (
     <div>
       <GlobalStyle />
-
+      <Header>Ønskelister</Header>
       <BackgroundVideo autoPlay muted loop>
         <source src={video} type="video/mp4" />
       </BackgroundVideo>

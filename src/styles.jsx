@@ -125,3 +125,61 @@ export const BackgroundVideo = styled.video`
   object-fit: cover;
   z-index: -1;
 `;
+export const Header = styled.h1`
+  text-align: center;
+  font-family: "Dancing script", cursive;
+  font-size: 3rem;
+  color: #ff4500;
+  margin-top: 20px;
+  padding-top: 35px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  position: relative;
+  animation:fadeIn 2s ease-in-out,scale,scaleUp 2s infinite alternate;
+
+  &::before {
+    content: "🎁";
+    font-size: 3rem;
+    margin: 0 10px;
+    animation-delay: 0s;
+  }
+  &::after {
+    content: "🎅";
+    font-size: 3rem;
+    margin: 0 10px;
+    // display: inline-block;
+    animation-delay: 0.5s infinite ease-in-out;
+  }
+    @keyframes fadeIn{
+    0%{
+    opacity:0
+    transform:translateY(-20px);
+    }
+    100%{
+    opacity:1;
+    transform:translateY(0);
+    }
+    }
+    @keyframes bounce{
+    0%,100%{
+    transform:translateY(0);
+    }
+    50%{
+    transform:translateY(-10px);
+    }
+    }
+    @keyframes scaleUp{
+    0%{
+    transform:Scale(1);
+    }
+    100%{
+    transform:Scale(1.5);
+    }
+    }
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+    &::before,
+    &::after {
+      font-size: 1.5rem;
+    }
+  }
+`;
