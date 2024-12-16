@@ -5,6 +5,7 @@ import {
   WishlistContainer,
   Header,
   BackgroundVideo,
+  Container,
 } from "./styles";
 import video from "./assets/images/snowman.mp4";
 //import video from "./assets/images/s.gif";
@@ -218,7 +219,7 @@ function App() {
     },
   ];
   return (
-    <div>
+    <Container>
       <GlobalStyle />
       <Header>Ønskelister</Header>
       <BackgroundVideo autoPlay muted loop>
@@ -230,7 +231,7 @@ function App() {
           <Kidswishlist key={product.id} data={product} />
         ))}
       </WishlistContainer>
-    </div>
+    </Container>
   );
 }
 

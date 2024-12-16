@@ -27,24 +27,24 @@ export const GlobalStyle = createGlobalStyle`
 `;
 
 export const WishlistContainer = styled.div`
-display:grid;
-grid-template-columns:repeat(2, 1fr);
-justify-content:end;
-  gap: 1px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
   padding: 5% 30%;
+  align-items: center;
+  justify-content: center;
   max-width: fit-content;
-  background:rgba(255,255,255,0.8)
-  border-radius:20px;
-  @media (max-width: 768px) {
-  display:grid;
-    grid-template-columns: 1fr; 
-  }
-    @media(min-width: 300px){
-    display:grid;
-    grid-template-column:1fr
-    
 
-    }
+  border-radius: 20px;
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10% 20%;
+  }
+  @media (min-width: 300px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 5% 10%;
+  }
 `;
 
 export const Component = styled.div`
@@ -71,6 +71,12 @@ export const Component = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   }
+  // @media (min-width: 300px) {
+  //   width: 100%;
+  //   height: auto;
+  //   padding: 10px;
+  //   margin: 5px 0;
+  // }
 `;
 
 export const KidDetails = styled.div`
@@ -82,6 +88,11 @@ export const KidDetails = styled.div`
   color: red;
 
   margin-bottom: 15px;
+  // @media (min-width: 300px) {
+  //   font-size: 1.5rem;
+  //   gap: 5px;
+  //   margin-bottom: 10px;
+  // }
 `;
 
 export const Wishlist = styled.ul`
@@ -98,8 +109,12 @@ export const Wishlist = styled.ul`
     transition: color 0.3s ease;
   }
   li:before {
-    content: "🎁"; 
-
+    content: "🎁";
+    // @media (min-width: 300px) {
+    //   font-size: 1.2rem;
+    //   margin-right: 3px;
+    // }
+  }
 `;
 
 export const NaughtyStatus = styled.div`
@@ -115,6 +130,9 @@ export const NaughtyStatus = styled.div`
       text-shadow: 0 0 15px ${(props) => (props.naughty ? "red" : "green")};
     }
   }
+  // @media (min-width: 300px) {
+  //   font-size: 1rem;
+  // }
 `;
 export const BackgroundVideo = styled.video`
   position: fixed;
@@ -182,4 +200,12 @@ export const Header = styled.h1`
       font-size: 1.5rem;
     }
   }
+`;
+export const Container = styled.div`
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  max-width:1200px;
+  justify-self:center;
+}
 `;
