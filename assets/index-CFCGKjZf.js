@@ -64,12 +64,11 @@ Error generating stack: `+i.message+`
 `,$h=_n.div`
 display:grid;
 grid-template-columns:repeat(2, 1fr);
-justify-items:center;
+justify-content:end;
   gap: 1px;
-  padding: 20px;
-  max-width: 1200px;
+  padding: 5% 30%;
+  max-width: fit-content;
   background:rgba(255,255,255,0.8)
-  margin: 0 auto;
   border-radius:20px;
   @media (max-width: 768px) {
   display:grid;
