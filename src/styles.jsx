@@ -39,11 +39,10 @@ export const WishlistContainer = styled.div`
   @media (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 10% 20%;
+    //padding: 10% 20%;
   }
   @media (min-width: 300px) {
     grid-template-columns: repeat(2, 1fr);
-    padding: 5% 10%;
   }
 `;
 
@@ -55,8 +54,9 @@ export const Component = styled.div`
   color: #333;
   border: 2px solid gold;
   margin: 10px;
+
   border-radius: 10px;
-  padding: 15px;
+
   padding-top: 80px;
   width: 300px;
   height: 400px;
@@ -71,12 +71,6 @@ export const Component = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   }
-  // @media (min-width: 300px) {
-  //   width: 100%;
-  //   height: auto;
-  //   padding: 10px;
-  //   margin: 5px 0;
-  // }
 `;
 
 export const KidDetails = styled.div`
@@ -88,11 +82,6 @@ export const KidDetails = styled.div`
   color: red;
 
   margin-bottom: 15px;
-  // @media (min-width: 300px) {
-  //   font-size: 1.5rem;
-  //   gap: 5px;
-  //   margin-bottom: 10px;
-  // }
 `;
 
 export const Wishlist = styled.ul`
@@ -110,10 +99,6 @@ export const Wishlist = styled.ul`
   }
   li:before {
     content: "🎁";
-    // @media (min-width: 300px) {
-    //   font-size: 1.2rem;
-    //   margin-right: 3px;
-    // }
   }
 `;
 
@@ -130,9 +115,6 @@ export const NaughtyStatus = styled.div`
       text-shadow: 0 0 15px ${(props) => (props.naughty ? "red" : "green")};
     }
   }
-  // @media (min-width: 300px) {
-  //   font-size: 1rem;
-  // }
 `;
 export const BackgroundVideo = styled.video`
   position: fixed;
@@ -151,20 +133,16 @@ export const Header = styled.h1`
   margin-top: 20px;
   padding-top: 35px;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  position: relative;
   animation:fadeIn 2s ease-in-out,scale,scaleUp 2s infinite alternate;
 
   &::before {
     content: "🎁";
     font-size: 3rem;
-    margin: 0 10px;
     animation-delay: 0s;
   }
   &::after {
     content: "🎅";
     font-size: 3rem;
-    margin: 0 10px;
-    // display: inline-block;
     animation-delay: 0.5s infinite ease-in-out;
   }
     @keyframes fadeIn{
