@@ -63,23 +63,25 @@ box-sizing:border-box;
 export const WishlistContainer = styled.div`
   position: absolute;
   top: 50px;
-  left: 450px;
+  left: 750px;
   transfom: translateX(-50%);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  padding-top: 40px;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
   justify-items: center;
   justify-content: center;
-  max-width: fit-content;
+  max-width: 1200px;
   border-radius: 20px;
+  margin: auto;
 
   @media (max-width: 768px) {
-    display: grid;
+    // padding: 10px;
+    position: absolute;
+    top: 50px;
+    left: 450px;
     grid-template-columns: 1fr;
-  }
-  @media (min-width: 300px) {
-    grid-template-columns: repeat(2, 1fr);
   }
 `;
 export const Component = styled.div`
@@ -91,6 +93,7 @@ export const Component = styled.div`
   border: 2px solid gold;
   margin: 10px;
   border-radius: 10px;
+  width: 100%;
   padding-top: 80px;
   width: 300px;
   height: 400px;
@@ -104,6 +107,10 @@ export const Component = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   }
+  @media (max-width: 768px) {
+    max-width: 100%; /* Prevents it from stretching too much */
+    margin: 10px 0; /* Centers it */
+  }
 `;
 
 export const KidDetails = styled.div`
@@ -115,6 +122,9 @@ export const KidDetails = styled.div`
   color: red;
 
   margin-bottom: 15px;
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
 `;
 
 export const Wishlist = styled.ul`
@@ -132,6 +142,9 @@ export const Wishlist = styled.ul`
   }
   li:before {
     content: "🎁";
+  }
+  @media (max-width: 480px) {
+    font-size: 13px;
   }
 `;
 
@@ -230,6 +243,9 @@ z-index:2;
     &::after {
       font-size: 1.5rem;
     }
+  }
+      @media (max-width: 768px) {
+    font-size: 2.5rem;
   }
 `;
 export const Container = styled.div`

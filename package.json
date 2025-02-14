@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://your-username.github.io/sravya-21k",
+  "homepage": "https://your-sravya-21k.github.io/wishlist_react",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
