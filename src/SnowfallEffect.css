@@ -9,11 +9,11 @@
 
 @keyframes snowfall {
   0% {
-    transform: translateY(-20vh);
+    transform: translateY(-20vh) translateX(0);
     opacity: 1;
   }
   100% {
-    transform: translateY(110vh);
+    transform: translateY(110vh) translateX(10vw);
     opacity: 0;
   }
 }
