@@ -9,7 +9,7 @@
 
 @keyframes snowfall {
   0% {
-    transform: translateY(-10vh);
+    transform: translateY(-20vh);
     opacity: 1;
   }
   100% {
