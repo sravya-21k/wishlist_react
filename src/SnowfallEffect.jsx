@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./SnowfallEffect.css";
 
 const SnowfallEffect = () => {
   const [snowflakes, setSnowflakes] = useState([]);
