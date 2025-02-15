@@ -64,7 +64,7 @@ export const WishlistContainer = styled.div`
   position: absolute;
   top: 50px;
   left: 750px;
-  transfom: translateX(-50%);
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
@@ -82,13 +82,11 @@ export const WishlistContainer = styled.div`
     top: 50px;
     left: 450px;
     grid-template-columns: 1fr;
-<<<<<<< HEAD
-=======
+
     //padding: 10% 20%;
   }
   @media (min-width: 300px) {
     grid-template-columns: repeat(2, 1fr);
->>>>>>> b6f9197 (updated code)
   }
 `;
 export const Component = styled.div`
@@ -101,11 +99,8 @@ export const Component = styled.div`
   margin: 10px;
 
   border-radius: 10px;
-<<<<<<< HEAD
   width: 100%;
-=======
 
->>>>>>> b6f9197 (updated code)
   padding-top: 80px;
   width: 300px;
   height: 400px;
@@ -119,13 +114,11 @@ export const Component = styled.div`
     transform: translateY(-10px);
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
   }
-<<<<<<< HEAD
+
   @media (max-width: 768px) {
     max-width: 100%; /* Prevents it from stretching too much */
     margin: 10px 0; /* Centers it */
   }
-=======
->>>>>>> b6f9197 (updated code)
 `;
 
 export const KidDetails = styled.div`
@@ -137,12 +130,9 @@ export const KidDetails = styled.div`
   color: red;
 
   margin-bottom: 15px;
-<<<<<<< HEAD
   @media (max-width: 480px) {
     font-size: 1.5rem;
   }
-=======
->>>>>>> b6f9197 (updated code)
 `;
 
 export const Wishlist = styled.ul`
@@ -160,12 +150,9 @@ export const Wishlist = styled.ul`
   }
   li:before {
     content: "🎁";
-<<<<<<< HEAD
   }
   @media (max-width: 480px) {
     font-size: 13px;
-=======
->>>>>>> b6f9197 (updated code)
   }
 `;
 
@@ -195,8 +182,6 @@ export const NaughtyStatus = styled.div`
       font-size: 1.8rem;
     }
   }
-<<<<<<< HEAD
-=======
 `;
 export const BackgroundVideo = styled.video`
   position: fixed;
@@ -206,7 +191,6 @@ export const BackgroundVideo = styled.video`
   height: 100%;
   object-fit: cover;
   z-index: -1;
->>>>>>> b6f9197 (updated code)
 `;
 
 export const Header = styled.h1`
@@ -236,11 +220,11 @@ export const Header = styled.h1`
   
 z-index:2;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
+
   animation:fadeIn 1.5 ease-out,scaleUp 1.5s ease-in-out;
-=======
+
   animation:fadeIn 2s ease-in-out,scale,scaleUp 2s infinite alternate;
->>>>>>> b6f9197 (updated code)
+
 
   &::before {
     content: "🎁";
