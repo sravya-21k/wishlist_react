@@ -1,4 +1,5 @@
 import styled, { createGlobalStyle } from "styled-components";
+import backgroundImage from "./assets/images/component.png";
 
 // Global styles with reset
 export const GlobalStyle = createGlobalStyle`
@@ -91,7 +92,8 @@ export const WishlistContainer = styled.div`
 `;
 export const Component = styled.div`
   position: relative;
-  background-image: url("src/assets/images/7950381.jpg");
+  background-image: url(${backgroundImage});
+
   background-size: cover;
   background-repeat: no-repeat;
   color: #333;
