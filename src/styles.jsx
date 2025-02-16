@@ -69,13 +69,13 @@ export const WishlistContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  padding: 20px;
+  padding: 60px;
   width: 100%;
   justify-items: center;
   justify-content: center;
   max-width: 1200px;
   border-radius: 20px;
-  margin: auto;
+  margin-top: 100px;
 
   @media (max-width: 768px) {
     // padding: 10px;
@@ -103,7 +103,7 @@ export const Component = styled.div`
   border-radius: 10px;
   width: 100%;
 
-  padding-top: 80px;
+  padding-top: 100px;
   width: 300px;
   height: 400px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
@@ -210,6 +210,7 @@ export const Header = styled.h1`
   width: max-content;
   text-shadow: 0 0 10px gold, 0 0 20px red, 0 0 30px green;
   animation: glowEffect 2s infinite alternate;
+  margin-top:20px;
 
   @keyframes glowEffect {
     from {
