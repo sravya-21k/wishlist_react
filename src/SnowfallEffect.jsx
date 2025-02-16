@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import "./SnowfallEffect.css";
-
 const SnowfallEffect = () => {
   const [snowflakes, setSnowflakes] = useState([]);
 
@@ -23,6 +21,11 @@ const SnowfallEffect = () => {
         );
       }
       setSnowflakes(flakes);
+      setTimeout(() => {
+        document.querySelectorAll(".snowflake").forEach((el) => {
+          console.log(el.style.animation);
+        });
+      }, 500);
     };
 
     createSnowflakes();

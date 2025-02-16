@@ -9,10 +9,33 @@
       href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap"
     />
     <title>Vite + React</title>
-    <script type="module" crossorigin src="/wishlist_react/assets/index-BpwLwVwE.js"></script>
-    <link rel="stylesheet" crossorigin href="/wishlist_react/assets/index-_CG2w-Xp.css">
+    <script
+      type="module"
+      crossorigin
+      src="/wishlist_react/assets/index-BpwLwVwE.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="/wishlist_react/assets/index-_CG2w-Xp.css"
+    />
   </head>
+  <style>
+    .snowflake {
+      position: absolute;
+      animation: snowfall 10s infinite linear;
+    }
+
+    @keyframes snowfall {
+      0% {
+        transform: translateY(-10%);
+      }
+      100% {
+        transform: translateY(110%);
+      }
+    }
+  </style>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
